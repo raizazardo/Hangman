@@ -1,5 +1,5 @@
 
-
+from replit import clear
 from hangman_art import logo, stages
 import random
 
@@ -23,7 +23,7 @@ for _ in range(word_length):
 
 while not end_of_game:
     guess = input("Guess a letter: ").lower()
-
+    clear()
     if guess in display:
         print(f"You already guesses {guess}")
     # Check guessed letter
